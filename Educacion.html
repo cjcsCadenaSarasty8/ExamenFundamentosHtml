@@ -1,11 +1,19 @@
 <html>
 	<head>
 		<title>Hoja de vida</title>
+		<style type="text/css">
+		.cuerpo{
+		width:600;
+		height:600;
+		margin:auto;
+		background-color:#F1F1F0
+		}
+		</style>
 	</head>
-	<body >
-		<h1><img src="Media/svg/logo.svg" width="50px" height="50px"> Hoja de Vida</h1>
-		<h1>Carlos Julio Cadena</h1>
-		<h2>Datos Personales</h2>
+	<body class="cuerpo">
+		<img src="Media/svg/logo.svg" width="100px" height="100px"><h1 style="text-align:center"> Hoja de Vida</h1>
+		<h1 style="text-align:center">Carlos Julio Cadena</h1>
+		<h2 style="text-align:center">Datos Personales</h2>
 		<strong>Nombres: </strong>Carlos Julio<br>
 		<strong>Apellidos: </strong>Cadena Sarasty<br>
 		<strong>Fecha Nacimiento: </strong>26 de abril 1993<br>
@@ -40,16 +48,31 @@
 		</table>
 		<form id="FormAgregarEstudio" title="Agregar Estudios">
 			<h2>Agregar Estudios</h2>
+			Año: <select id="CampoAno">
+					<option value="2017">2017</option>
+					<option value="2016">2016</option>
+					<option value="2015">2015</option>
+					<option value="2014">2014</option>
+					<option value="2013">2012</option>
+					<option value="2011">2011</option>
+					<option value="2010">2010</option>
+					<option value="2009">2009</option>
+					<option value="2008">2008</option>
+					<option value="2007">2007</option>
+				</select><br>
+			Institución: 
 			<input id="CampoInstucion" type="text" required="true"> <br>
-			<text id="CampoLugar">
-			<input type="radiogroup">
-				<li>Si</li>
-				<li>No</li>
-			</input>
+			Lugar:
+			<textarea  id="CampoLugar"></textarea> <br>
+			¿Culmino?
+			<input type="radio" name="CampoGraduado">Si</input>
+			<input type="radio" name="CampoGraduado">No</input>
+			<br>
 			<button submit>Enviar</button>
 		</form>
-		
+		<br>
 		<footer>
+			<strong>Derechos Reservados</strong>
 			<li>Correo Electrónico: <a href="mailto:cjcs.cadenasarasty8@gmail.com">cjcs.cadenasarasty8@gmail.com</a></li>
 			<li>Teléfono: 55555555</li>
 			<li>Facebook: <a href="https://www.facebook.com/carlosjulio.cadenasarasty">cjcs.cadenasarasty8@gmail.com</a></li>
